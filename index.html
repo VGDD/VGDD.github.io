@@ -39,10 +39,12 @@
 					}
 				});
 			});
+			$('.hover').bind('touchstart touchend', function(e) {
+		        e.preventDefault();
+		        $(this).toggleClass('hover_effect');
+		    });
 		</script>
-		<script>
-		  document.body.addEventListener('touchstart',function(){},false);
-		</script>
+		
 	</head>
 
 	<body>
@@ -166,7 +168,7 @@
 						<!-- Fin .tresCol -->
 						<div class="tresCol">
 							<div class="cliente">
-								<div class="uria hover-zoom">
+								<div class="uria hover-zoom hover">
 									<div class="cabecera-cliente">
 										<img src="images/logotipo-uria.png" />
 									</div>
