@@ -39,14 +39,14 @@
 					}
 				});
 			});
-			$('.hover-zoom').on("touchstart", function (e) {
+			$('a.hover-zoom').on("touchstart", function (e) {
 			    "use strict"; //satisfy the code inspectors
 			    var link = $(this); //preselect the link
 			    if (link.hasClass('hover-effect')) {
 			        return true;
 			    } else {
 			        link.addClass("hover-effect");
-			        $('.hover-zoom').not(this).removeClass("hover");
+			        $('a.hover-zoom').not(this).removeClass("hover");
 			        e.preventDefault();
 			        return false; //extra, and to make sure the function has consistent return points
 			    }
@@ -110,7 +110,7 @@
 					<div class="fila">
 						<div class="tresCol">
 							<div class="cliente">
-								<a href="#" class="andbank hover-zoom">
+								<a href="https://www.behance.net/gallery/21062479/Uria-Menndez-Campus" target="_blank" class="andbank hover-zoom">
 									<div class="cabecera-cliente">
 										<img src="images/logotipo-andbank.png" />
 									</div>
