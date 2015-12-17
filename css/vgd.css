@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'MontserratUltraLight';
+    src: url('../fonts/montserrat-ultralight.eot');
+    src: url('../fonts/montserrat-ultralight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-ultralight.woff2') format('woff2'),
+         url('../fonts/montserrat-ultralight.woff') format('woff'),
+         url('../fonts/montserrat-ultralight.ttf') format('truetype'),
+         url('../fonts/montserrat-ultralight.svg#montserratultra_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+svg {fill:currentColor}
+
+#container{
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+/* COMUNES =================================
+  ===============================================*/
+input.form-control{
+ width: 98%;
+ height: 40px;
+ font: 1.2em 'MontserratUltraLight', sans-serif; ;
+ margin: 5px 0 10px 0;
+ border: none;
+ border-bottom: 1px solid #F2E55B;
+}
+textarea {
+  background: url(images/none.png) center center no-repeat; /* This ruins default border */
+   width: 98%;
+ height: 40px;
+ font: 1.2em 'MontserratUltraLight', sans-serif; ;
+ margin: 5px 0 10px 0;
+ border: none;
+ border-bottom: 1px solid #F2E55B;
+}
+.btn {
+	border: 1px solid #93b634;
+	background-color: transparent;
+	color: #93b634;
+	padding: 7px 15px;
+	font-size: 1.2em;
+	font-family: 'MontserratUltraLight', sans-serif; 
+	text-align: center;
+	transition: all .1s ease;
+}
+.btn:hover {
+    box-shadow:0px 1px 3px rgba(0,0,0,.9);
+    background-color: #93B634;
+    color: #fff;
+   }
+.btn:active {
+    box-shadow:0px 0px 0px rgba(0,0,0,.9);
+   }
+.botonera{
+	margin: 20px 0
+}
+   
+/* ESTRUCTURA =================================
+  ===============================================*/
+ 
+.fila{
+	display: block;
+}
+.dosCol{
+	width: 50%;
+	float: left;
+}
+.tresCol{
+	width: 33.333%;
+	float: left;
+}
+
+
+/* CABECERA =================================
+  ===============================================*/
+
+#cabecera{
+	margin-top: 30px;
+	padding-left: 20px;
+}
+.emotic-box{
+	display: inline-block;
+	vertical-align:middle;
+	width: 48px;
+	height: 48px;
+}
+
+#menu-navegacion{
+	border-color: #000 -moz-use-text-color;
+    border-style: solid none double;
+    border-width: 5px 0 15px;
+    box-sizing: content-box;
+    content: "";
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    height: 6px;
+    padding: 0;
+    position: absolute;
+    right: 42px;
+    top: 42px;
+    width: 35px;
+}
+
+#menu-navegacion ul{
+	display: none;
+}
+
+/* CONTENIDO =================================
+ ===============================================*/
+
+#imagen-personal{
+	position: relative;
+}
+#imagen-personal h2{
+	bottom: 10px;
+    left: 30px;
+    position: absolute;
+    z-index:10;
+    font-family: 'MontserratUltraLight', sans-serif;
+}
+#imagen-personal h2 strong{
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+.imagen-victor{
+	width:100%;
+	height:512px;
+}
+
+.imagen-victor img {
+  position:absolute;
+  right:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.imagen-victor img.bottom {
+  opacity:0;
+}
+.imagen-victor.top img.bottom {
+  opacity:0;
+}
+.imagen-victor.bottom img.bottom {
+  opacity:1;
+}
+/* POST -------------------------------------*/
+
+#last-post{
+	background-color: #f2e55b;
+	text-align: center;
+	padding: 15px;
+}
+#last-post h2{
+	font-family: 'MontserratUltraLight', sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+}
+#tags{
+	margin-bottom: 25px;
+}
+#tags span{
+	margin: 0 10px;
+	font-family: 'MontserratUltraLight', sans-serif;
+}
+#last-post p{
+	width: 60%;
+	margin: 0 auto;
+}
+
+/* PORTFOLIO -----------------------------------*/
+#portfolio{
+	overflow: auto;
+}
+.cliente{
+	
+}
+.cliente .botonera{
+	text-align: center;
+	margin: 0px;
+	padding: 20px 0;
+	height:42px;
+	background-color: rgba(255,255,255,0.7);
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.cliente .botonera .btn {
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 7px 15px;
+}
+.cliente .botonera a.btn {
+	text-decoration: none;
+}
+.cliente .botonera .btn svg {
+	width: 24px;
+	height: 24px;
+	margin: 0 0 0 10px;
+    vertical-align: middle;
+}
+.cliente .botonera .btn:hover {
+	border: 1px solid #93b634;
+}
+.cabecera-cliente{
+	height:40px;
+	padding: 15px;
+	text-align: center;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.9);
+    opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.cabecera-cliente img{
+	
+}
+.contenido-cliente{
+	height:98px;
+	padding: 55px 15px 15px;
+	background-color: rgba(255,255,255,0.7);
+    opacity: 0.0;
+    color:#fff;
+    text-align:center;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.contenido-cliente p, .contenido-cliente strong{
+	margin: 0px;
+	opacity: 0;
+    transform: translateY(10px) scale(0.9);
+    transform-origin: right bottom 0;
+    transition: transform 0.8s ease 0.1s, opacity 0.8s ease 0.1s;
+}
+.contenido-cliente strong{
+	display: block;
+}
+.andbank{
+    background-image: url('../images/AndbankMockup.png');
+    background-position: top left !important;
+    background-color: #b9c1c3;
+}
+.andbank .contenido-cliente{
+	color: #000;
+}
+.andbank .botonera .btn {
+	border: 1px solid #000;
+	color: #000;
+	padding: 7px 15px;
+}
+.andbank .botonera .btn:hover {
+	border: 1px solid #93b634;
+	color: #fff;
+}
+.ferrovial{
+    background-image: url('../images/FerrovialMockup.png');
+    background-position: top right !important;
+}
+.ferrovial .cabecera-cliente{
+	background-color: rgba(220,181,42,0.9);
+}
+.ferrovial .contenido-cliente, .cliente .ferrovial .botonera{
+	background-color: rgba(220,181,42,0.7);
+}
+.uria{
+    background-image: url('../images/UriaMockup.png');
+    background-position: right top !important;	
+}
+.uria .cabecera-cliente{
+	background-color: rgba(58,102,168,0.9);
+}
+.uria .contenido-cliente, .cliente .uria .botonera{
+	background-color: rgba(58,102,168,0.7);
+}
+.telefonica-digital{
+    background-image: url('../images/TelefonicaMockup.png');
+    background-position: bottom left !important;	
+}
+.telefonica-digital .cabecera-cliente{
+	background-color: rgba(0,49,69,0.9);
+}
+.telefonica-digital .contenido-cliente, .cliente .telefonica-digital .botonera{
+	background-color: rgba(0,49,69,0.7);
+}
+.ing{
+    background-image: url('../images/IngMockup.png');
+    background-position: bottom left !important;	
+}
+.ing .cabecera-cliente{
+	background-color: rgba(255,102,0,0.9);
+}
+.ing .contenido-cliente, .cliente .ing .botonera{
+	background-color: rgba(255,102,0,0.7);
+}
+.vips{
+    background-image: url('../images/VipsMockup.png');
+    background-position: top left !important;	
+}
+.vips .cabecera-cliente{
+	background-color: rgba(221,26,44,0.9);
+}
+.vips .contenido-cliente, .cliente .vips .botonera{
+	background-color: rgba(221,26,44,0.7);
+}
+
+.hover-zoom {
+   height: 320px;
+   width: 100%;
+  -webkit-transition: all 4s ease-in-out;
+          transition: all 4s ease-in-out;
+  background-size: auto 107%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hover-zoom:hover {
+  background-size: auto 120%;
+}
+.hover-zoom:hover .cabecera-cliente, .hover-zoom:hover .contenido-cliente, .hover-zoom:hover .botonera{
+	opacity: 1.0;
+}
+.hover-zoom:hover .contenido-cliente p, .hover-zoom:hover .contenido-cliente strong {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+}
+
+/* CONTACTO --------------------------*/
+
+#contacto{
+	text-align: center;
+	padding: 20px 0;
+}
+#contacto p{
+	width: 50%;
+	margin: 15px auto;
+}
+#contacto #formulario{
+	width: 50%;
+	margin: 15px auto;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 550px) 
+and (max-width : 1024px) {
+
+/* Styles */
+
+.tresCol{
+	width: 50%;
+	float: left;
+}
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-width : 549px) {
+	
+/* Styles */
+
+.tresCol{
+	width: 100%;
+	float: left;
+}
+
+}
