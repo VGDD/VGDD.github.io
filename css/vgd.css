@@ -330,25 +330,23 @@ textarea {
   background-repeat: no-repeat;
   position: relative;
 }
-.hover-zoom:hover, .hover-zoom:focus, .hover-zoom:active, .hover-zoom.hover_effect {
+.hover-zoom:hover, .hover-zoom:focus, .hover-zoom:active, .hover-zoom.hover-effect {
   background-size: auto 120%;
 }
 .hover-zoom:hover .cabecera-cliente, .hover-zoom:hover .contenido-cliente, .hover-zoom:hover .botonera,
 .hover-zoom:focus .cabecera-cliente, .hover-zoom:focus .contenido-cliente, .hover-zoom:focus .botonera,
 .hover-zoom:active .cabecera-cliente, .hover-zoom:active .contenido-cliente, .hover-zoom:active .botonera,
-.hover-zoom.hover_effect .cabecera-cliente, .hover-zoom.hover_effect .contenido-cliente, .hover-zoom.hover_effect .botonera{
+.hover-zoom.hover-effect .cabecera-cliente, .hover-zoom.hover-effect .contenido-cliente, .hover-zoom.hover-effect .botonera{
 	opacity: 1.0;
 }
 .hover-zoom:hover .contenido-cliente p, .hover-zoom:hover .contenido-cliente strong,
 .hover-zoom:focus .contenido-cliente p, .hover-zoom:focus .contenido-cliente strong,
-.hover-zoom:active .contenido-cliente p, .hover-zoom:active .contenido-cliente strong {
+.hover-zoom:active .contenido-cliente p, .hover-zoom:active .contenido-cliente strong,
+.hover-zoom.hover-effect .contenido-cliente p, .hover-zoom.hover-effect .contenido-cliente strong {
     opacity: 1;
     transform: translateY(0px) scale(1);
 }
-.hover {
--webkit-user-select: none;
--webkit-touch-callout: none;        
-}
+
 /* CONTACTO --------------------------*/
 
 #contacto{

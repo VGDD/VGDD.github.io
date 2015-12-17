@@ -39,15 +39,23 @@
 					}
 				});
 			});
-			$('.hover').bind('touchstart touchend', function(e) {
-		        e.preventDefault();
-		        $(this).toggleClass('hover_effect');
-		    });
+			$('.hover-zoom').on("touchstart", function (e) {
+			    "use strict"; //satisfy the code inspectors
+			    var link = $(this); //preselect the link
+			    if (link.hasClass('hover-effect')) {
+			        return true;
+			    } else {
+			        link.addClass("hover-effect");
+			        $('.hover-zoom').not(this).removeClass("hover");
+			        e.preventDefault();
+			        return false; //extra, and to make sure the function has consistent return points
+			    }
+			});
 		</script>
 		
 	</head>
 
-	<body ontouchstart="">
+	<body>
 		<div id="container">
 			<header id="cabecera" class="cabecera">
 				<h1><img src="images/hello-icon.png" alt=";)" class="emotic-box" /> Hello!!</h1>
@@ -168,7 +176,7 @@
 						<!-- Fin .tresCol -->
 						<div class="tresCol">
 							<div class="cliente">
-								<div class="uria hover-zoom hover">
+								<div class="uria hover-zoom">
 									<div class="cabecera-cliente">
 										<img src="images/logotipo-uria.png" />
 									</div>
