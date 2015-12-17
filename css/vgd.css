@@ -330,13 +330,15 @@ textarea {
   background-repeat: no-repeat;
   position: relative;
 }
-.hover-zoom:hover {
+.hover-zoom:hover, .hover-zoom:focus {
   background-size: auto 120%;
 }
-.hover-zoom:hover .cabecera-cliente, .hover-zoom:hover .contenido-cliente, .hover-zoom:hover .botonera{
+.hover-zoom:hover .cabecera-cliente, .hover-zoom:hover .contenido-cliente, .hover-zoom:hover .botonera,
+.hover-zoom:focus .cabecera-cliente, .hover-zoom:focus .contenido-cliente, .hover-zoom:focus .botonera{
 	opacity: 1.0;
 }
-.hover-zoom:hover .contenido-cliente p, .hover-zoom:hover .contenido-cliente strong {
+.hover-zoom:hover .contenido-cliente p, .hover-zoom:hover .contenido-cliente strong,
+.hover-zoom:focus .contenido-cliente p, .hover-zoom:focus .contenido-cliente strong {
     opacity: 1;
     transform: translateY(0px) scale(1);
 }
