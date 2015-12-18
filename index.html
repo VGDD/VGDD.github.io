@@ -39,6 +39,7 @@
 					}
 				});
 			});
+<<<<<<< HEAD
 $('a.taphover').on("touchstart", function (e) {
     "use strict"; //satisfy the code inspectors
     var link = $(this); //preselect the link
@@ -51,6 +52,20 @@ $('a.taphover').on("touchstart", function (e) {
         return false; //extra, and to make sure the function has consistent return points
     }
 });
+=======
+			$('.hover-zoom').on("touchstart", function (e) {
+			    "use strict"; //satisfy the code inspectors
+			    var link = $(this); //preselect the link
+			    if (link.hasClass('hover-effect')) {
+			        return true;
+			    } else {
+			        link.addClass("hover-effect");
+			        $('.hover-zoom').not(this).removeClass("hover");
+			        e.preventDefault();
+			        return false; //extra, and to make sure the function has consistent return points
+			    }
+			});
+>>>>>>> parent of c31caf3... div a 2
 		</script>
 		
 		<style type="text/css">
@@ -123,7 +138,11 @@ $('a.taphover').on("touchstart", function (e) {
 					<div class="fila">
 						<div class="tresCol">
 							<div class="cliente">
+<<<<<<< HEAD
 								<a href="https://www.behance.net/gallery/21062479/Uria-Menndez-Campus" target="_" class="andbank hover-zoom">
+=======
+								<a href="#" class="andbank hover-zoom">
+>>>>>>> parent of c31caf3... div a 2
 									<div class="cabecera-cliente">
 										<img src="images/logotipo-andbank.png" />
 									</div>

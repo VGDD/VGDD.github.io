@@ -201,7 +201,7 @@ textarea {
 	color: #fff;
 	padding: 7px 15px;
 }
-.cliente .botonera .btn {
+.cliente .botonera a.btn {
 	text-decoration: none;
 }
 .cliente .botonera .btn svg {
@@ -321,7 +321,6 @@ textarea {
 }
 
 .hover-zoom {
-	display:block;
    height: 320px;
    width: 100%;
   -webkit-transition: all 4s ease-in-out;
