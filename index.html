@@ -39,20 +39,26 @@
 					}
 				});
 			});
-			$('a.hover-zoom').on("touchstart", function (e) {
-			    "use strict"; //satisfy the code inspectors
-			    var link = $(this); //preselect the link
-			    if (link.hasClass('hover-effect')) {
-			        return true;
-			    } else {
-			        link.addClass("hover-effect");
-			        $('a.hover-zoom').not(this).removeClass("hover");
-			        e.preventDefault();
-			        return false; //extra, and to make sure the function has consistent return points
-			    }
-			});
+$('a.taphover').on("touchstart", function (e) {
+    "use strict"; //satisfy the code inspectors
+    var link = $(this); //preselect the link
+    if (link.hasClass('hover')) {
+        return true;
+    } else {
+        link.addClass("hover");
+        $('a.taphover').not(this).removeClass("hover");
+        e.preventDefault();
+        return false; //extra, and to make sure the function has consistent return points
+    }
+});
 		</script>
 		
+		<style type="text/css">
+			a.taphover:hover, a.taphover.hover {
+    background: red;
+    color: white;
+}
+		</style>
 	</head>
 
 	<body>
@@ -60,6 +66,13 @@
 			<header id="cabecera" class="cabecera">
 				<h1><img src="images/hello-icon.png" alt=";)" class="emotic-box" /> Hello!!</h1>
 			</header>
+			<div>
+				<a class="taphover" href="http://www.google.com" target="_blank">Link 1</a>
+
+<a class="taphover" href="http://www.microsoft.com" target="_blank">Link 2</a>
+
+<a class="taphover" href="http://www.apple.com" target="_blank">Link 3</a>
+			</div>
 			<nav id="menu-navegacion">
 				<!--<img src="images/ico-menu.svg" alt="Abrir Menu" />-->
 				<ul>
@@ -110,7 +123,7 @@
 					<div class="fila">
 						<div class="tresCol">
 							<div class="cliente">
-								<a href="https://www.behance.net/gallery/21062479/Uria-Menndez-Campus" target="_blank" class="andbank hover-zoom">
+								<a href="https://www.behance.net/gallery/21062479/Uria-Menndez-Campus" target="_" class="andbank hover-zoom">
 									<div class="cabecera-cliente">
 										<img src="images/logotipo-andbank.png" />
 									</div>
