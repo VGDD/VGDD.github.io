@@ -41,6 +41,7 @@
 			});
 $('a.taphover').on("touchstart", function (e) {
     "use strict"; //satisfy the code inspectors
+    e.preventDefault();
     var link = $(this); //preselect the link
     if (link.hasClass('hover')) {
         return true;
