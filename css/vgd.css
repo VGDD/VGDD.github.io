@@ -49,6 +49,7 @@ textarea {
 	font-family: 'MontserratUltraLight', sans-serif; 
 	text-align: center;
 	transition: all .1s ease;
+	text-decoration: none;
 }
 .btn:hover {
     box-shadow:0px 1px 3px rgba(0,0,0,.9);
@@ -77,7 +78,10 @@ textarea {
 	float: left;
 }
 
-
+.contenido-centrado{
+	text-align: center;
+	font-size: .8em;
+}
 /* CABECERA =================================
   ===============================================*/
 
@@ -385,6 +389,14 @@ and (max-width : 549px) {
 .tresCol{
 	width: 100%;
 	float: left;
+}
+#contacto #formulario {
+    margin: 15px auto;
+    width: 80%;
+}
+#contacto p {
+    margin: 15px auto;
+    width: 100%;
 }
 
 }
