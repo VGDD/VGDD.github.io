@@ -350,7 +350,9 @@ textarea {
     opacity: 1;
     transform: translateY(0px) scale(1);
 }
-
+.hover-zoom.hover-effect .contenido-cliente p, .hover-zoom.hover-effect .contenido-cliente strong {
+    font-size: 3em;
+}
 /* CONTACTO --------------------------*/
 
 #contacto{
