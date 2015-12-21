@@ -416,7 +416,7 @@ and (max-width : 549px) {
 /* Styles */
 #imagen-personal h2{
 	width:100%;
-	bottom: 100px;
+	bottom: 120px;
 	text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7);
 }
 
@@ -424,6 +424,9 @@ and (max-width : 549px) {
 	width:90%;
 	bottom: 10px;
 	text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7);
+}
+.imagen-victor img {
+left: -50px;
 }
 .tresCol{
 	width: 100%;
