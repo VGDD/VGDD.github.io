@@ -32,16 +32,14 @@
 				$(window).scroll(function() {
 					var scroll = $(window).scrollTop();
 
-					if (scroll >= 10) {
+					if (scroll >= 1) {
 						header.removeClass('top').addClass("bottom");
 					} else {
 						header.removeClass("bottom").addClass('top');
 					}
 				});
 			});
-			$('.hover-zoom').on('touchstart', function(){
-			    $(this).addClass('hover-effect');
-			});
+	
 		</script>
 		
 	</head>
@@ -73,13 +71,17 @@
 
 				<div id="imagen-personal">
 					<h2>Soy Víctor Gonzalez de Diego <strong> UX Designer </strong> y <strong> Web Developer </strong></h2>
+					<h3>Aquí puedes encontrar un extracto   de mi <strong>último post</strong> publicado en mi blog y una selección de <strong>mis trabajos</strong>.</h3>
 					<div class="imagen-victor">
-						<img class="top" src="images/icon-man1.png" />
-						<img class="bottom" src="images/icon-man2.png" />
+						<img class="top" src="images/victor-gonzalez-1.png" />
+						<img class="bottom" src="images/victor-gonzalez-2.png" />
 					</div>
 				</div>
 					
 				<div id="last-post">
+					<div class="contenido-centrado">
+						<p>Blog</p>
+					</div>
 					<article>
 						<h2>Iconos gratuitos</h2>
 						<div id="tags">
@@ -98,7 +100,9 @@
 				</div>
 
 				<div id="portfolio">
-
+					<div class="contenido-centrado fondo-negro">
+						<p>Conoce mis trabajos</p>
+					</div>
 					<!-- .fila -->
 					<div class="fila">
 						<div class="tresCol">
@@ -483,7 +487,7 @@
 
 			<footer>
 				<p>
-					&copy; Copyright  by Víctor González
+					&copy; vgd
 				</p>
 			</footer>
 		</div>
