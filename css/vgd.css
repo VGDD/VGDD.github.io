@@ -61,7 +61,11 @@ h5{
     margin: 20px auto;
     padding-bottom: 10px;
     text-align: center;
-    width: 60%;
+    width: 66%;
+}
+.hideme
+{
+    opacity:0;
 }
 /* COMUNES =================================
   ===============================================*/
@@ -102,7 +106,7 @@ textarea {
     box-shadow:0px 0px 0px rgba(0,0,0,.9);
    }
 .botonera{
-	margin: 20px 0
+	margin: 40px 0 20px 0
 }
    
 /* ESTRUCTURA =================================
@@ -252,19 +256,31 @@ top:11px;
 .imagen-victor.bottom img.bottom {
   opacity:1;
 }
+
 /* HABILIDADES ------------------------------*/
 
-  .circulos:before,.circulos:after {content: " "; display: block;}
-      .circulos:after {clear: both;}
-            .circulos {*zoom: 1; width:60%; margin: 50px auto}
-            .circulos.cincuenta{width: 50%}
-            
-  .circulos .titulo{
+.circulos:before,.circulos:after {content: " "; display: block;}
+
+.circulos:after {
+	clear: both;
+	}       
+.circulos {
+	*zoom: 1;
+	 width: 60%; 
+	 margin: 50px 
+	 auto
+}
+.circulos.cincuenta{
+	width: 56%
+	}       
+.circulos .titulo{
   	font-size: .15em;
   	text-align: center;
   	top:-35px;
   	position: absolute;
+  	width: 100%;
   }
+  
 /* POST -------------------------------------*/
 
 #last-post{
@@ -487,18 +503,35 @@ and (max-width : 1024px) {
 
 /* Styles */
 
-#imagen-personal h2{
-	width:40%;
-	bottom: 135px;
+#imagen-personal h3{
+	text-align: center;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0) url("../images/subrayado2.svg") no-repeat scroll center center;
+    width: 70%;
 }
 
-#imagen-personal h3{
-	width:40%;
-	bottom: 10px;
-}
 .tresCol{
 	width: 50%;
 	float: left;
+}
+
+.circulos {
+	 width: 52%; 
+}
+.circulos.cincuenta{
+	margin: 50px auto 0;
+}
+.c100 {
+  margin: 0 0.3em 0.6em 0.3em;
+}
+.c100:last-child {
+  margin: 0 0.3em 0 0.3em;
+}
+#imagen-personal h2.big{
+	width:70%;
+}
+#imagen-personal h2.small{
+	width:66%;
 }
 
 }
@@ -513,14 +546,11 @@ and (max-width : 549px) {
 	bottom: 120px;
 	text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7);
 }
-
 #imagen-personal h3{
-	width:90%;
-	bottom: 10px;
-	text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.7);
-}
-.imagen-victor img {
-left: -50px;
+	text-align: center;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0) url("../images/subrayado2.svg") no-repeat scroll center center;
+    width: 70%;
 }
 .tresCol{
 	width: 100%;
@@ -534,6 +564,23 @@ left: -50px;
     margin: 15px auto;
     width: 100%;
 }
-
+.circulos {
+	 width: 52%; 
+}
+.circulos.cincuenta{
+	margin: 50px auto 0;
+}
+.c100 {
+  margin: 0 0.3em 0.6em 0.3em;
+}
+.c100:last-child {
+  margin: 0 0.3em 0 0.3em;
+}
+#imagen-personal h2.big{
+	width:70%;
+}
+#imagen-personal h2.small{
+	width:66%;
+}
 }
 
