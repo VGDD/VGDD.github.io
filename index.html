@@ -20,9 +20,13 @@
 
 		<!-- FONTS -->
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Kanit:400,900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 
 		<!-- CSS -->
 		<link href="css/vgd.css" rel="stylesheet" />
+		<link href="css/circle.css" rel="stylesheet">
 
 		<!-- JS -->
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -39,48 +43,176 @@
 					}
 				});
 			});
-	
+
 		</script>
-		
+
 	</head>
 
 	<body ontouchstart="">
 		<div id="container">
 			<header id="cabecera" class="cabecera">
-				<h1><img src="images/hello-icon.png" alt=";)" class="emotic-box" /> Hola!!</h1>
+				<img src="images/hello-icon.png" alt=";)" class="emotic-box" />
+				<h1> Hola!!</h1>
+				<p>
+					mi nombre es
+				</p>
 			</header>
 			<!--<nav id="menu-navegacion">
-				<img src="images/ico-menu.svg" alt="Abrir Menu" />
-				<ul>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/contact">Last post</a>
-					</li>
-					<li>
-						<a href="/">Portfolio</a>
-					</li>
-					<li>
-						<a href="/contact">Contact</a>
-					</li>
-				</ul>
+			<img src="images/ico-menu.svg" alt="Abrir Menu" />
+			<ul>
+			<li>
+			<a href="/">Home</a>
+			</li>
+			<li>
+			<a href="/contact">Last post</a>
+			</li>
+			<li>
+			<a href="/">Portfolio</a>
+			</li>
+			<li>
+			<a href="/contact">Contact</a>
+			</li>
+			</ul>
 			</nav>-->
 
 			<div id="contenido">
 
-				<div id="imagen-personal">
-					<h2>Soy Víctor Gonzalez de Diego <strong> UX Designer </strong> y <strong> Web Developer </strong></h2>
-					<h3>Aquí puedes encontrar un extracto   de mi <strong>último post</strong> publicado en mi blog y una selección de <strong>mis trabajos</strong>.</h3>
+				<section id="imagen-personal">
+
 					<div class="imagen-victor">
 						<img class="top" src="images/victor-gonzalez-1.png" />
 						<img class="bottom" src="images/victor-gonzalez-2.png" />
 					</div>
-				</div>
-					
-				<div id="last-post">
+
+					<h2 class="big">Victor</h2>
+					<h2 class="small"> Gonzalez de Diego </h2>
+
+					<div class="div-gafas">
+						<span class="spy">y</span>
+						<span class="sps">soy</span>
+						<img class="gafas" src="images/gafas.svg" />
+					</div>
+					<h3> UX Designer &nbsp;&nbsp;y&nbsp;&nbsp; Web Developer </h3>
+					<!--<h3>Aquí puedes encontrar un extracto   de mi <strong>último post</strong> publicado en mi blog y una selección de <strong>mis trabajos</strong>.</h3>
+					-->
+				</section>
+
+				<section id="habilidades">
+					<div class="banner">
+						<h4>Habilidades</h4>
+					</div>
+					<h5>Profesionales</h5>
+					<div class="circulos">
+
+						<div class="c100 p90 small">
+							<div class="titulo">
+								PHOTOSHOP
+							</div>
+							<span>90%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p74 small">
+							<div class="titulo">
+								ILLUSTRATOR
+							</div>
+							<span>74%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p82 small">
+							<div class="titulo">
+								HTML 5
+							</div>
+							<span>82%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p75 small">
+							<div class="titulo">
+								CSS3
+							</div>
+							<span>75%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p64 small">
+							<div class="titulo">
+								JQUERY
+							</div>
+							<span>64%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+					</div>
+					<h5>Personales</h5>
+					<div class="circulos cincuenta">
+
+						<div class="c100 p85 small">
+							<div class="titulo">
+								Trabajo en equipo
+							</div>
+							<span>85%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p74 small">
+							<div class="titulo">
+								Comunicación
+							</div>
+							<span>74%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p81 small">
+							<div class="titulo">
+								Creatividad
+							</div>
+							<span>81%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p88 small">
+							<div class="titulo">
+								Dedicación
+							</div>
+							<span>88%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<section id="last-post">
 					<div class="contenido-centrado">
-						<p>Blog</p>
+						<p>
+							En mi blog:
+						</p>
 					</div>
 					<article>
 						<h2>Branding y personalización gráfica de SharePoint – Temas de Sitio</h2>
@@ -96,12 +228,14 @@
 							<a href="https://victorgonzalez.wordpress.com/2015/12/22/branding-y-personalizacion-grafica-de-sharepoint-temas-de-sitio/" class="btn"> Leer más </a>
 						</div>
 					</article>
-				</div>
+				</section>
 
-				<div id="portfolio">
-					<div class="contenido-centrado fondo-negro">
-						<p>Conoce mis trabajos</p>
+
+				<section id="portfolio">
+					<div class="manos">
+						<h4> <img src="images/mano.svg" /> Mis trabajos <img src="images/mano2.svg" /></h4>
 					</div>
+
 					<!-- .fila -->
 					<div class="fila">
 						<div class="tresCol">
@@ -449,9 +583,9 @@
 						<!-- Fin .tresCol -->
 					</div>
 					<!-- Fin .fila -->
-				</div>
+				</section>
 
-				<div id="contacto">
+				<section id="contacto">
 					<img src="images/hello-icon.png" alt=";)" class="emotic-box" />
 					<h3>Estamos en contacto</h3>
 					<!--<p>
@@ -471,8 +605,9 @@
 
 								<input type="text" class="form-control" name="asunto_control" placeholder="Asunto" required />
 								<br />
-								<textarea name="mensaje_control" class="form-control" placeholder="Mensaje" required ></textarea>								
+								<textarea name="mensaje_control" class="form-control" placeholder="Mensaje" required ></textarea>																
 								
+
 
 								<div class="botonera">
 									<input type="submit" class="btn" value="Enviar!" />
@@ -480,7 +615,7 @@
 							</p>
 						</form>
 					</div>
-				</div>
+				</section>
 
 			</div>
 
