@@ -30,7 +30,7 @@ svg {fill:currentColor}
 }
 .banner{
 	background: url(../images/banner.svg) no-repeat center center;
-	background-size: 180px 43px;
+	background-size: 220px 70px;
 	height: 50px;
 }
 .banner h4{
@@ -576,7 +576,7 @@ and (max-width : 549px) {
 	width:66%;
 }
 .manos h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 }
 
