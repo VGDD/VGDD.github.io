@@ -40,7 +40,13 @@
 					classToRemove : 'hideme', // Class to remove before adding 'classToAdd' to the elements
 					offset : 100
 				});
-
+				
+				$('#logo-vgd').click(function(e){
+					$(this).removeClass().addClass('logo animated infinite bounceOutUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				      $(this).removeClass();
+				    });
+			    });
+			    
 				$(window).scroll(function() {
 
 					$(function() {
@@ -65,13 +71,27 @@
 	</head>
 
 	<body ontouchstart="">
+	
 		<div id="container">
+			<div id="logo-vgd">
+				<img src="images/logo-vgd.png" alt=";)" class="logo animated bounce" />
+			</div>
+			<div class="button">
+			      <a href="pdf/VíctorGonzálezDeDiego.pdf"><img src="images/ico-curriculum.png" alt=";)" class="" /></a>
+			      <p class="top">descargar</p>
+			      <p class="bottom">1.5MB</p>
+			</div>
 			<header id="cabecera" class="cabecera">
-				<img src="images/hello-icon.png" alt=";)" class="emotic-box" />
-				<h1> Hola!!</h1>
-				<p>
+
+				<h1 class="animated bounceInDown"> Hola!!</h1>
+				<p class="animated bounceInDown">
 					mi nombre es
 				</p>
+				
+			<div id="curriculum">
+				
+			</div>
+
 			</header>
 			<!--<nav id="menu-navegacion">
 			<img src="images/ico-menu.svg" alt="Abrir Menu" />
@@ -92,16 +112,15 @@
 			</nav>-->
 
 			<div id="contenido">
-
-				<section id="imagen-personal">
-
-					<div class="imagen-victor">
+				    
+				<section id="imagen-personal">    
+					<div class="imagen-victor animated bounceInUp">
 						<img class="top" src="images/victor-gonzalez-1.png" />
 						<img class="bottom" src="images/victor-gonzalez-2.png" />
 					</div>
 
-					<h2 class="big">Victor</h2>
-					<h2 class="small"> Gonzalez de Diego </h2>
+					<h2 class="big animated bounceInUp">Victor</h2>
+					<h2 class="small animated bounceInUp"> Gonzalez de Diego </h2>
 
 					<div class="div-gafas">
 						<span class="spy">y</span>
@@ -144,20 +163,9 @@
 
 						<div class="c100 p82 small">
 							<div class="titulo">
-								HTML 5
+								HTML5/CSS3
 							</div>
 							<span>82%</span>
-							<div class="slice">
-								<div class="bar"></div>
-								<div class="fill"></div>
-							</div>
-						</div>
-
-						<div class="c100 p75 small">
-							<div class="titulo">
-								CSS3
-							</div>
-							<span>75%</span>
 							<div class="slice">
 								<div class="bar"></div>
 								<div class="fill"></div>
@@ -169,6 +177,17 @@
 								JQUERY
 							</div>
 							<span>64%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
+						<div class="c100 p75 small">
+							<div class="titulo">
+								AXURE
+							</div>
+							<span>75%</span>
 							<div class="slice">
 								<div class="bar"></div>
 								<div class="fill"></div>
@@ -257,7 +276,7 @@
 							<div class="cliente">
 								<div class="andbank hover-zoom">
 									<div class="cabecera-cliente">
-										<img src="images/logotipo-andbank.png" />
+										<!--<img src="images/logotipo-andbank.png" />-->
 									</div>
 									<!--<div class="imagen-cliente">
 									<img src="images/AndbankMockup.png" alt="Andbank" />
@@ -266,7 +285,7 @@
 										<p>
 											Cliente:
 										</p>
-										<strong> Andbank</strong>
+										<strong> Confidencial</strong>
 										<p>
 											Proyecto:
 										</p>

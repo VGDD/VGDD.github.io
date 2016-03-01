@@ -130,6 +130,84 @@ textarea {
 }
 /* CABECERA =================================
   ===============================================*/
+#logo-vgd{
+	position: fixed;
+    top: 30px;
+    left:25px;
+    z-index: 10;
+}
+#logo-vgd:hover{
+	cursor: pointer
+}
+
+#curriculum{
+
+}
+.button {
+    width: 64px;
+    height:64px;
+    position: fixed;
+    bottom: 15px;
+    right:10px;
+    z-index: 20;
+}
+.button a {
+    color: #fff;
+    display: block;
+    height: 44px;
+    padding-top:4px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 44px;
+}
+.button p {
+    background: rgba(255,255,255,0);
+    color: rgba(255,255,255,0);
+    display: block;
+    font-size: 10px;
+    line-height:21px;
+    height: 23px;
+    margin: -50px 0 0 -10px;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 64px;
+    z-index: -1;
+}
+.button:hover p{
+	background: #222;
+	color:#fff;
+}
+.button:hover .bottom {
+    margin: 5px 0 0 -10px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.9);
+}
+.button:hover .top {
+    margin: -75px 0 0 -10px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.9);
+}
+.button a:hover {
+   background: #fff;
+   box-shadow: 0px 1px 3px rgba(0,0,0,.9); 
+}
+.button a:active {
+    background: #fff;
+    box-shadow: 0px 0px 0px ;
+}
+.button:active .bottom {
+    margin: -50px 0 0 -10px;
+    box-shadow: 0px 0px 0px;
+    background: rgba(255,255,255,0);
+    color: rgba(255,255,255,0);
+}
+.button:active .top {
+    margin: -50px 0 0 -10px;
+    box-shadow: 0px 0px 0px;
+    background: rgba(255,255,255,0);
+    color: rgba(255,255,255,0);
+}
+
 
 #cabecera{
 	margin-top: 30px;
