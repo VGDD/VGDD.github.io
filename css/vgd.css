@@ -67,6 +67,22 @@ h5{
 {
     opacity:0;
 }
+.change {  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.change img {
+  width: 24px
+}
+.change:hover {
+  cursor: pointer;
+  animation-name: pulse;
+  -moz-animation-name: pulse;
+}
 /* COMUNES =================================
   ===============================================*/
 input.form-control{
@@ -87,9 +103,9 @@ textarea {
  border-bottom: 1px solid #F2E55B;
 }
 .btn {
-	border: 1px solid #93b634;
+	border: 1px solid #000;
 	background-color: transparent;
-	color: #93b634;
+	color: #000;
 	padding: 7px 15px;
 	font-size: 1.2em;
 	font-family: 'MontserratUltraLight', sans-serif; 
@@ -99,8 +115,9 @@ textarea {
 }
 .btn:hover {
     box-shadow:0px 1px 3px rgba(0,0,0,.9);
-    background-color: #93B634;
-    color: #fff;
+    border: 1px solid #f2e55b;
+    background-color: #f2e55b;
+    color: #000;
    }
 .btn:active {
     box-shadow:0px 0px 0px rgba(0,0,0,.9);
@@ -302,7 +319,7 @@ top:11px;
 #imagen-personal h3{
 	font-size: 3em;
     font-weight: 100;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     margin: 0 auto;
     width: 55%;
     font-family: 'Bree Serif', serif;
@@ -349,7 +366,7 @@ top:11px;
 	 auto
 }
 .circulos.cincuenta{
-	width: 56%
+	width: 48%
 	}       
 .circulos .titulo{
   	font-size: .15em;
@@ -369,7 +386,7 @@ top:11px;
 #last-post h2{
 	font-family: 'MontserratUltraLight', sans-serif;
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 3em;
 }
 #tags{
 	margin-bottom: 25px;
@@ -418,7 +435,8 @@ top:11px;
     vertical-align: middle;
 }
 .cliente .botonera .btn:hover {
-	border: 1px solid #93b634;
+	border: 1px solid #f2e55b;
+  color: #000;
 }
 .cabecera-cliente{
 	height:40px;
@@ -473,7 +491,7 @@ top:11px;
 	padding: 7px 15px;
 }
 .andbank .botonera .btn:hover {
-	border: 1px solid #93b634;
+	border: 1px solid #f2e55b;
 	color: #fff;
 }
 .ferrovial{
@@ -657,4 +675,5 @@ and (max-width : 549px) {
     font-size: 1.2em;
 }
 }
+
 
