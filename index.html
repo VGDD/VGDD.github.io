@@ -46,7 +46,14 @@
 				      $(this).removeClass();
 				    });
 			    });
-			    
+
+			    $('.claim1').hide();
+				$('.change').on('click',
+				  function() {
+				    $('.claim1, .claim2').toggle(200);
+				  }
+				);
+
 				$(window).scroll(function() {
 
 					$(function() {
@@ -127,7 +134,7 @@
 						<span class="sps">soy</span>
 						<img class="gafas" src="images/gafas.svg" />
 					</div>
-					<h3> UX Designer &nbsp;&nbsp;y&nbsp;&nbsp; Web Developer </h3>
+					<h3> UX Designer &nbsp;&nbsp;&&nbsp;&nbsp; Research </h3>
 					<!--<h3>Aquí puedes encontrar un extracto   de mi <strong>último post</strong> publicado en mi blog y una selección de <strong>mis trabajos</strong>.</h3>
 					-->
 				</section>
@@ -141,7 +148,7 @@
 
 						<div class="c100 p90 small">
 							<div class="titulo">
-								PHOTOSHOP
+								FIGMA
 							</div>
 							<span>90%</span>
 							<div class="slice">
@@ -163,20 +170,9 @@
 
 						<div class="c100 p82 small">
 							<div class="titulo">
-								HTML5/CSS3
+								PHOTOSHOP
 							</div>
 							<span>82%</span>
-							<div class="slice">
-								<div class="bar"></div>
-								<div class="fill"></div>
-							</div>
-						</div>
-
-						<div class="c100 p64 small">
-							<div class="titulo">
-								JQUERY
-							</div>
-							<span>64%</span>
 							<div class="slice">
 								<div class="bar"></div>
 								<div class="fill"></div>
@@ -193,13 +189,25 @@
 								<div class="fill"></div>
 							</div>
 						</div>
+
+						<div class="c100 p64 small">
+							<div class="titulo">
+								HTML5/CSS3
+							</div>
+							<span>64%</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+
 					</div>
 					<h5>Personales</h5>
 					<div class="circulos cincuenta hideme">
 
 						<div class="c100 p85 small">
 							<div class="titulo">
-								Trabajo en equipo
+								TRABAJO EN EQUIPO
 							</div>
 							<span>85%</span>
 							<div class="slice">
@@ -210,7 +218,7 @@
 
 						<div class="c100 p74 small">
 							<div class="titulo">
-								Comunicación
+								COMUNICACIÓN
 							</div>
 							<span>74%</span>
 							<div class="slice">
@@ -221,7 +229,7 @@
 
 						<div class="c100 p81 small">
 							<div class="titulo">
-								Creatividad
+								CREATIVIDAD
 							</div>
 							<span>81%</span>
 							<div class="slice">
@@ -232,7 +240,7 @@
 
 						<div class="c100 p88 small">
 							<div class="titulo">
-								Dedicación
+								DEDICACIÓN
 							</div>
 							<span>88%</span>
 							<div class="slice">
@@ -246,23 +254,21 @@
 				<section id="last-post" class="hideme">
 					<div class="contenido-centrado">
 						<p>
-							En mi blog:
+							<strong>
+								Pills
+							</strong>
 						</p>
+						<small>Use with care</small>
 					</div>
-					<article>
-						<h2>Branding y personalización gráfica de SharePoint – Temas de Sitio</h2>
-						<div id="tags">
-							<span>Diciembre 22, 2015</span>
-							<span>Personal, SharePoint</span>
-							<span>0 Comments </span>
-						</div>
-						<p>
-							Una de los primeros pasos que debemos dar a la hora de personalizar gráficamente nuestro SharePoint es el de crear un tema de sitio con nuestros colores y tipografías corporativos para poder utilizarlo en los sitios que estamos creando.
-						</p>
-						<div class="botonera">
-							<a href="https://victorgonzalez.wordpress.com/2015/12/22/branding-y-personalizacion-grafica-de-sharepoint-temas-de-sitio/" class="btn"> Leer más </a>
-						</div>
+					<article class="claim1">
+						<h2>"User first, Experience Second and then Design, followed by technology"</h2>
 					</article>
+					<article class="claim2">
+						<h2>"The Context of use is as important as the Content"</h2>
+					</article>
+					<div class="contenido-centrado">
+					<p class="change"><img src="images/ico-pill.svg" /></p>
+					</div>
 				</section>
 
 				<section id="portfolio">
@@ -588,3 +594,4 @@
 </html>
 </script>
 </html>
+
