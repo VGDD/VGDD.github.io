@@ -47,7 +47,7 @@ svg {fill:currentColor}
 	height: 100px;
 }
 .manos h4{
-	font-size: 2em;
+	font-size: 1.8em;
 	font-family: 'Montserrat';
 	text-align: center;
 	color: #000;
@@ -245,7 +245,8 @@ textarea {
 	text-align: center;
 }
 #cabecera h1{
-
+  margin: 0 auto;
+  padding: 0;
   text-align: center;
 }
 #cabecera p{
@@ -283,6 +284,7 @@ textarea {
 
 #imagen-personal{
 	position: relative;
+	margin-top: 32px;
 }
 #imagen-personal h2.big{
 	width:50%;
@@ -326,7 +328,7 @@ right:-41px;
 top:11px;
 }
 #imagen-personal .div-gafas{
-	margin: 0 auto;
+	margin: 128px auto 0 auto;
 	width: 227px;
 	position: relative;
 }
@@ -369,10 +371,24 @@ top:11px;
 /* HABILIDADES ------------------------------*/
 
 #habilidades{
-  padding:128px 0;
+  padding:128px 0 32px 0;
 }
-#habilidades h2:first-of-type{
-  margin-bottom: 256px;
+#habilidades .profesionales h1, #habilidades .personales h1 {
+  font-family: 'Bree Serif', serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+ #habilidades .profesionales, #habilidades .personales {
+ 	margin: 0 10vw;
+ } 
+.primera-letra {
+  font-size: 3rem;
+  display: inline;
+}
+#habilidades .profesionales h2, #habilidades .personales h2{
+  margin: 25px auto 100px auto;
+  font-weight: normal;
 }
 .circulos:before,.circulos:after {content: " "; display: block;}
 
@@ -400,24 +416,35 @@ top:11px;
 
 #last-post{
 	background-color: #f2e55b;
-	text-align: center;
-	padding: 15px;
+	padding: 16px 15px 64px 15px;
+	margin-bottom: 128px;
+}
+#last-post .contenido-centrado{
+	margin-bottom: 32px;
 }
 #last-post h2{
-	font-family: 'MontserratUltraLight', sans-serif;
+	margin: 0;
+	font-family: 'Kanit', sans-serif;
+	font-size: 1.6em;
+	padding-bottom: 0;
+}
+#last-post h3{
+	margin: 0;
+	font-family: 'Kanit', sans-serif;
 	font-weight: normal;
-	font-size: 3em;
-}
-#tags{
-	margin-bottom: 25px;
-}
-#tags span{
-	margin: 0 10px;
-	font-family: 'MontserratUltraLight', sans-serif;
+	font-size: 1.6em;
 }
 #last-post p{
-	width: 60%;
-	margin: 0 auto;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+
+}
+article.claim{
+	width: 30%;
+	display: inline-block;
+	padding: 0 1%;
+	vertical-align: top;
 }
 
 /* PORTFOLIO -----------------------------------*/
@@ -646,6 +673,13 @@ and (max-width : 1024px) {
 	width:66%;
 }
 
+article.claim{
+	width: 47%;
+	display: inline-block;
+	padding: 0 1% 24px 1%;
+	vertical-align: top;
+}
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -692,7 +726,17 @@ and (max-width : 549px) {
 	width:66%;
 }
 .manos h4 {
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
+.manos h4 img {
+  vertical-align: top;
+  width: 45px;
+}
+article.claim{
+	width: 97%;
+	display: block;
+	padding: 0 1% 24px 1%;
+	vertical-align: top;
 }
 
+}
