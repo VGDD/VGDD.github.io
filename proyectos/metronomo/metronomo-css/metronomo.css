@@ -152,7 +152,6 @@ input[type="checkbox"]:checked + label {
 .container { width: 100%; }
 
 header {
-  height: 65px;
   background: #879BAD;
   color: darken(#879BAD, 40%);
   font-size: 36px;
@@ -160,12 +159,15 @@ header {
   text-align: center;
   padding: 5px;
 }
-
+#cabecera{
+    margin: 0;
+    padding: 0;
+}
 .metronome-container {
-  width: 75%;
+  width: 100%;
   height: auto;
   position: relative;
-  margin: 40px auto;
+  margin: 0px auto;
   background: #222;
   
   .options-btn {
@@ -235,7 +237,7 @@ header {
   
   .controls {
     color: #FFF;
-    padding: 20px;
+    padding: 0 0 20px 0;
     text-align: center;
     
     label {
