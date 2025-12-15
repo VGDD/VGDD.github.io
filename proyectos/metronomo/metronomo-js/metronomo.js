@@ -47,7 +47,7 @@ function playNote(t) {
     $(".counter .dot").attr("style", "");
 
     $(".counter .dot").eq(noteCount).css({
-      transform: "translateY(-10px)",
+      transform: "translateY(-25px)",
       background: "#F75454"
     });
 }
@@ -68,11 +68,46 @@ function countDown() {
 }
 
 /* Tap to tempo*/
-$(".tap-btn").click(function() {
+$("#btn-1").click(function() {
   $('.bpm-input').val('130');
-  $("#bpm-display").html( $(this).val() + '130 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Song 2 - 130 BMP' )
 });
-
+$("#btn-2").click(function() {
+  $('.bpm-input').val('120');
+  $("#bpm-display").html( $(this).val() + 'Sol de invierno - 120 BMP' )
+});
+$("#btn-3").click(function() {
+  $('.bpm-input').val('169');
+  $("#bpm-display").html( $(this).val() + 'Lonely boy - 169 BMP' )
+});
+$("#btn-4").click(function() {
+  $('.bpm-input').val('192');
+  $("#bpm-display").html( $(this).val() + 'Pongamos - 192 BMP' )
+});
+$("#btn-5").click(function() {
+  $('.bpm-input').val('100');
+  $("#bpm-display").html( $(this).val() + 'Los perros - 100 BMP' )
+});
+$("#btn-6").click(function() {
+  $('.bpm-input').val('120');
+  $("#bpm-display").html( $(this).val() + 'Bullet - 120 BMP' )
+});
+$("#btn-7").click(function() {
+  $('.bpm-input').val('140');
+  $("#bpm-display").html( $(this).val() + 'Toro - 140 BMP' )
+});
+$("#btn-8").click(function() {
+  $('.bpm-input').val('148');
+  $("#bpm-display").html( $(this).val() + 'Como si fueras  - 145 BMP' )
+});
+$("#btn-9").click(function() {
+  $('.bpm-input').val('155');
+  $("#bpm-display").html( $(this).val() + 'Whole lotta - 155 BMP' )
+});
+$("#btn-10").click(function() {
+  $('.bpm-input').val('177');
+  $("#bpm-display").html( $(this).val() + 'Blithzkrieg - 177 BMP' )
+});
 /* Tap tempo 
 $(".tap-btn").click(function() {
   var d = new Date();
