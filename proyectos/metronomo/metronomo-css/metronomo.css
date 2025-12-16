@@ -5,9 +5,11 @@ body {
   background: #F2F0D9; 
   font-family: 'Open Sans', sans-serif; 
 }
-
+h2{
+    margin: 0;
+}
 input[type=range][orient=vertical] {
-  height: 700px;
+  height: 450px;
   writing-mode: vertical-lr;
     direction: rtl;
     appearance: slider-vertical;
@@ -21,7 +23,7 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-runnable-track {
   width: 11px;
-  height: 700px;
+  height: 450px;
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 1px 1px 1px #000000;
@@ -46,7 +48,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 input[type=range]::-moz-range-track {
   width: 11px;
-  height: 700px;
+  height: 450px;
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 1px 1px 1px #000000;
@@ -65,7 +67,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 input[type=range]::-ms-track {
-  width: 700px;
+  width: 450px;
   height: 11px;
   cursor: pointer;
   animate: 0.2s;
@@ -104,7 +106,28 @@ input[type=range]:focus::-ms-fill-upper {
   background: #74A9D8;
 }
 
-.container { width: 100%; display: flex }
+.container { width: 100%;}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 69.5%;
+}
+
+.right {
+  width: 19.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 header {
   background: #879BAD;
@@ -140,6 +163,9 @@ header {
     }
   }
   
+  #bpm-display{
+        padding: 0 0 15px 0
+    }
   .options-active {
     max-height: 1000px !important;
     padding: 15px;
@@ -229,7 +255,7 @@ header {
     }
     
     .play-btn {
-      width: 45%;
+      width: 99%;
       background: #D6E26D;
       border: 0px;
       border-radius: 5px;
@@ -241,7 +267,7 @@ header {
     }
     
     .tap-btn {
-      width: 45%;
+      width: 99%;
       background: #888;
       border: 0px;
       border-radius: 5px;
@@ -249,7 +275,7 @@ header {
       color: lighten(#888, 45%);
       transition: background 0.3s;
       display: block;
-      margin: 25px auto;
+      margin: 15px auto;
       &:hover { background: lighten(#888, 5%); }
     }
   }

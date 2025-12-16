@@ -70,43 +70,43 @@ function countDown() {
 /* Tap to tempo*/
 $("#btn-1").click(function() {
   $('.bpm-input').val('130');
-  $("#bpm-display").html( $(this).val() + 'Song 2 - 130 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Song 2 - 130 BPM' )
 });
 $("#btn-2").click(function() {
   $('.bpm-input').val('120');
-  $("#bpm-display").html( $(this).val() + 'Sol de invierno - 120 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Sol de invierno - 120 BPM' )
 });
 $("#btn-3").click(function() {
   $('.bpm-input').val('169');
-  $("#bpm-display").html( $(this).val() + 'Lonely boy - 169 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Lonely boy - 169 BPM' )
 });
 $("#btn-4").click(function() {
   $('.bpm-input').val('192');
-  $("#bpm-display").html( $(this).val() + 'Pongamos - 192 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Pongamos - 192 BPM' )
 });
 $("#btn-5").click(function() {
   $('.bpm-input').val('100');
-  $("#bpm-display").html( $(this).val() + 'Los perros - 100 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Los perros - 100 BPM' )
 });
 $("#btn-6").click(function() {
   $('.bpm-input').val('120');
-  $("#bpm-display").html( $(this).val() + 'Bullet - 120 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Bullet - 120 BPM' )
 });
 $("#btn-7").click(function() {
   $('.bpm-input').val('140');
-  $("#bpm-display").html( $(this).val() + 'Toro - 140 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Toro - 140 BPM' )
 });
 $("#btn-8").click(function() {
   $('.bpm-input').val('148');
-  $("#bpm-display").html( $(this).val() + 'Como si fueras  - 145 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Como si fueras  - 145 BPM' )
 });
 $("#btn-9").click(function() {
   $('.bpm-input').val('155');
-  $("#bpm-display").html( $(this).val() + 'Whole lotta - 155 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Whole lotta - 155 BPM' )
 });
 $("#btn-10").click(function() {
   $('.bpm-input').val('177');
-  $("#bpm-display").html( $(this).val() + 'Blithzkrieg - 177 BMP' )
+  $("#bpm-display").html( $(this).val() + 'Blithzkrieg - 177 BPM' )
 });
 /* Tap tempo 
 $(".tap-btn").click(function() {
@@ -119,7 +119,7 @@ $(".tap-btn").click(function() {
 
 /* Display BPM */
 $(".bpm-input").on("input click", function(){
-    $("#bpm-display").html( $(this).val() + ' USD' )
+    $("#bpm-display").html( $(this).val() + ' BPM' )
 })
 
 
