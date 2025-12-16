@@ -115,11 +115,11 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .left {
-  width: 69.5%;
+  width: 69%;
 }
 
 .right {
-  width: 19.5%;
+  width: 19%;
 }
 
 /* Clear floats after the columns */
