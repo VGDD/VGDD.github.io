@@ -108,6 +108,10 @@ $("#btn-10").click(function() {
   $('.bpm-input').val('177');
   $("#bpm-display").html( $(this).val() + 'Blithzkrieg - 177 BPM' )
 });
+$("#btn-11").click(function() {
+  $('.bpm-input').val('87');
+  $("#bpm-display").html( $(this).val() + 'Pedir perdon - 87 BPM' )
+});
 /* Tap tempo 
 $(".tap-btn").click(function() {
   var d = new Date();
