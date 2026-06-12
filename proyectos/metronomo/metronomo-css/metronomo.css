@@ -120,6 +120,8 @@ input[type=range]:focus::-ms-fill-upper {
 
 .right {
   width: 19%;
+  top:130px;
+  position: sticky;
 }
 
 /* Clear floats after the columns */
@@ -164,7 +166,14 @@ header {
   }
   
   #bpm-display{
-        padding: 0 0 15px 0
+        padding: 0 0 15px 0;
+        color:#fff;
+        text-align:center; 
+    }
+    #stiky{
+        top: 0;
+        position: sticky;
+        background: #222;
     }
   .options-active {
     max-height: 1000px !important;
@@ -200,7 +209,7 @@ header {
   .counter {
     width: 100%;
     padding-bottom: 10px;
-    background: lighten(#333, 5%);
+    background: lighten(#333, 5%) important!;
     text-align: center;
     
     .dot {
