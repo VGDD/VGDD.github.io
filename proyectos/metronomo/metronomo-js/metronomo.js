@@ -68,79 +68,82 @@ function countDown() {
 }
 
 /* Tap to tempo*/
+
+/* 
 $("#btn-1").click(function() {
   $('.bpm-input').val('140');
   $("#bpm-display").html( $(this).val() + 'Vertigo - 140 BPM' )
 });
+*/
+$("#btn-1").click(function() {
+  $('.bpm-input').val('120');
+  $("#bpm-display").html( $(this).val() + 'Wicked game - 120 BPM' )
+});
 $("#btn-2").click(function() {
+  $('.bpm-input').val('92');
+  $("#bpm-display").html( $(this).val() + 'Sweet Dreams - 92 BPM' )
+});
+$("#btn-3").click(function() {
   $('.bpm-input').val('169');
   $("#bpm-display").html( $(this).val() + 'Lonely boy - 169 BPM' )
 });
-$("#btn-3").click(function() {
+$("#btn-4").click(function() {
   $('.bpm-input').val('117');
   $("#bpm-display").html( $(this).val() + 'Otherside - 117 BPM' )
-});
-$("#btn-4").click(function() {
-  $('.bpm-input').val('92');
-  $("#bpm-display").html( $(this).val() + 'Sweet Dreams - 92 BPM' )
 });
 $("#btn-5").click(function() {
   $('.bpm-input').val('120');
   $("#bpm-display").html( $(this).val() + 'Bullet - 120 BPM' )
 });
 $("#btn-6").click(function() {
-  $('.bpm-input').val('120');
-  $("#bpm-display").html( $(this).val() + 'Wicked game - 120 BPM' )
-});
-$("#btn-7").click(function() {
   $('.bpm-input').val('130');
   $("#bpm-display").html( $(this).val() + 'Song 2 - 130 BPM' )
 });
-$("#btn-8").click(function() {
-  $('.bpm-input').val('192');
-  $("#bpm-display").html( $(this).val() + 'Pongamos - 192 BPM' )
-});
-$("#btn-9").click(function() {
-  $('.bpm-input').val('120');
-  $("#bpm-display").html( $(this).val() + 'Sol de invierno - 120 BPM' )
-});
-$("#btn-10").click(function() {
+$("#btn-7").click(function() {
   $('.bpm-input').val('163');
   $("#bpm-display").html( $(this).val() + 'Paranoid  - 163 BPM' )
 });
-$("#btn-11").click(function() {
+$("#btn-8").click(function() {
   $('.bpm-input').val('87');
   $("#bpm-display").html( $(this).val() + 'The pretender - 87 BPM' )
 });
-$("#btn-12").click(function() {
+$("#btn-9").click(function() {
   $('.bpm-input').val('185');
   $("#bpm-display").html( $(this).val() + 'The bitter end - 185 BPM' )
 });
-$("#btn-13").click(function() {
+$("#btn-10").click(function() {
   $('.bpm-input').val('109');
   $("#bpm-display").html( $(this).val() + 'Killing in the name - 109 BPM' )
 });
-$("#btn-14").click(function() {
+$("#btn-11").click(function() {
+  $('.bpm-input').val('192');
+  $("#bpm-display").html( $(this).val() + 'Pongamos - 192 BPM' )
+});
+$("#btn-12").click(function() {
+  $('.bpm-input').val('120');
+  $("#bpm-display").html( $(this).val() + 'Sol de invierno - 120 BPM' )
+});
+$("#btn-13").click(function() {
   $('.bpm-input').val('100');
   $("#bpm-display").html( $(this).val() + 'Los perros - 100 BPM' )
 });
-$("#btn-15").click(function() {
+$("#btn-14").click(function() {
   $('.bpm-input').val('140');
   $("#bpm-display").html( $(this).val() + 'Toro - 140 BPM' )
 });
-$("#btn-16").click(function() {
+$("#btn-15").click(function() {
   $('.bpm-input').val('87');
   $("#bpm-display").html( $(this).val() + 'Como si fueras a morir mañana - 87 BPM' )
 });
-$("#btn-17").click(function() {
+$("#btn-16").click(function() {
   $('.bpm-input').val('124');
   $("#bpm-display").html( $(this).val() + 'Seven nation army - 124 BPM' )
 });
-$("#btn-18").click(function() {
+$("#btn-17").click(function() {
   $('.bpm-input').val('155');
   $("#bpm-display").html( $(this).val() + 'Whole lotta Rosie - 155 BPM' )
 });
-$("#btn-19").click(function() {
+$("#btn-18").click(function() {
   $('.bpm-input').val('177');
   $("#bpm-display").html( $(this).val() + 'Blithzkrieg - 177 BPM' )
 });
